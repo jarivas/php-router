@@ -1,0 +1,22 @@
+{
+    "name": "jarivas/php-router",
+    "description": "A http router for using in php projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Jose A Rivas",
+        "email": "me@jarivas.work"
+      }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+      "psr-4": {"PhpRouter\\": "src/"}
+    },
+    "autoload-dev": {
+      "psr-4": { "PhpRouter\\Tests\\": "tests/unit/" }
+    },
+    "require-dev": {
+        "jarivas/http-client": "^1.0"
+    }
+}

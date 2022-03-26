@@ -1,0 +1,14 @@
+version: "2.4"
+services:
+    dev:
+        image: 16nsk/devcontainers:8.1-16
+        ports:
+          - "${WEB_PORT:-8080}:8080"
+        volumes:
+          - .:/projects/workspace
+        command: sleep infinity
+        networks:
+          php_dev:
+
+networks:
+  php_dev:
